@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
+    init.hcismd.up.sh \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
