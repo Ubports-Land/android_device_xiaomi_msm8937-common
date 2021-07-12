@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
     libtinyxml \
+    liboverlay \
     memtrack.msm8937
 
 # Properties
