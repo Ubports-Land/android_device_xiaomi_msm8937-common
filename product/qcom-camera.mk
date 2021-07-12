@@ -4,13 +4,16 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.isp.clock.optmz=0 \
+    vidc.enc.dcvs.extra-buff-count=2 \
+    media.camera.ts.monotonic=1 \
     camera.display.umax=1920x1080 \
     camera.display.lmax=1280x720 \
-    camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
-    persist.camera.gyro.android=1 \
-    persist.camera.HAL3.enabled=0 \
-    persist.camera.is_type=1 \
-    vidc.enc.narrow.searchrange=1 \
+    persist.camera.stats.test=5 \
+    persist.camera.feature.cac=1 \
+    persist.camera.imglib.cac3=2 \
+    camera.lowpower.record.enable=1 \
+    persist.camera.gyro.disable=0 \
     camera.fifo.disable=1 \
     persist.camera.shutter.disable=1 \
     persist.media.metrics.enabled=0
