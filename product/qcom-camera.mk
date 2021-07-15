@@ -1,20 +1,19 @@
 # Snap
 PRODUCT_PACKAGES += \
-    libshim_camera \
+    libshim_camera
     Snap
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.isp.clock.optmz=0 \
-    vidc.enc.dcvs.extra-buff-count=2 \
-    media.camera.ts.monotonic=1 \
     camera.display.umax=1920x1080 \
     camera.display.lmax=1280x720 \
-    persist.camera.stats.test=5 \
-    persist.camera.feature.cac=1 \
-    persist.camera.imglib.cac3=2 \
+    persist.sys.chgdisabled=0 \
+    camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
+    persist.camera.gyro.android=1 \
+    persist.camera.HAL3.enabled=0 \
+    persist.camera.is_type=1 \
+    ro.def.camera.video.quality=100 \
+    ro.def.camera.bright.main=middle \
     camera.lowpower.record.enable=1 \
-    persist.camera.gyro.disable=0 \
-    camera.fifo.disable=1 \
-    persist.camera.shutter.disable=1 \
-    persist.media.metrics.enabled=0
+    vidc.enc.narrow.searchrange=1 \
+    ro.camcorder.videoModes=true
