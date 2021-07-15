@@ -1,6 +1,6 @@
 # Snap
 PRODUCT_PACKAGES += \
-    libshim_camera
+    libshim_camera \
     Snap
 
 # Properties
