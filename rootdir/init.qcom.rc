@@ -123,7 +123,7 @@ on boot
     chmod 0644 /dev/goodix_fp
 
     setprop persist.sys.fp.vendor none
-    start gx_fpd
+    # start gx_fpd
 
     # IR blaster
     chown root system /sys/class/leds/infrared/transmit
@@ -469,7 +469,8 @@ service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
-
+    disabled
+    
 service fingerprintd /system/bin/fingerprintd
     class late_start
     socket fpce stream 0666 system system
@@ -484,7 +485,7 @@ service gx_fpd /system/bin/gx_fpd
     disabled
 
 on property:persist.sys.fp.vendor=switchf
-    stop gx_fpd
+     # stop gx_fpd
     setprop persist.sys.fp.vendor searchf
     start fingerprintd
     setprop ro.boot.fpsensor fpc
